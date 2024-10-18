@@ -1,0 +1,159 @@
+/*
+
+ * @author Benson Kimani
+ * wearville.net
+ * September 2024
+
+*/
+
+/* Smart phones (portrait and landscape) */
+@media only screen and (min-device-width:0px) and (max-device-width:768px) {
+	body {
+		font-size:12px; 
+		line-height:16px;
+	}
+
+	.intro{
+		width: 97%;
+		padding: 0px 1% 0px 1%;
+	}
+
+	.content{
+		width: 97%;
+		padding: 0px 1% 0px 1%;
+	}
+}
+/* Smart phones (portrait and landscape) and on resized browser */
+@media only screen and (max-width:768px){
+		
+	body {
+		font-size:12px; 
+		line-height:16px;
+	}
+
+	.intro{
+		width: 97%;
+		padding: 0px 1% 0px 1%;
+	}
+
+	.content{
+		width: 97%;
+		padding: 0px 1% 0px 1%;
+	}
+}
+
+/* iPads, Tablets (Portrait and Landscape) */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+		
+	body {
+		font-size:14px; 
+		line-height:18px;
+	}
+
+	.intro{
+		width: 28%;
+		padding: 0px 1% 0px 1%;
+	}
+
+	.content{
+		width: 67%;
+		padding: 0px 1% 0px 1%;
+	}
+
+}
+
+/* iPads (Portrait and Landscape) and on resized browser */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	
+	body {
+		font-size:14px; 
+		line-height:18px;
+	}
+
+	.intro{
+		width: 28%;
+		padding: 0px 1% 0px 1%;
+	}
+
+	.content{
+		width: 67%;
+		padding: 0px 1% 0px 1%;
+	}
+
+
+}
+
+/* Desktop, Laptops and Large Screens */
+@media only screen and (min-width:1024px) and (min-device-width:1024px) {
+	
+	body {
+		font-size:16px; 
+		line-height:20px;
+	}
+
+	.intro{
+		width: 38%;
+		padding: 0px 1% 0px 1%;
+	}
+
+	.content{
+		width: 57%;
+		padding: 0px 1% 0px 1%;
+	}
+
+}
+
+@media all {	
+		
+	body {
+		color: #202020; 
+		background-color:#FFFFFF;
+		padding: 0px; 
+		margin-top: 50px;
+		font-family: Optima, Verdana, Helvetica, Verdana;
+		width: 100%;
+	}
+
+	body a {
+		text-decoration: none;
+		color: #33adff;
+		font-size: 1.1em;
+	}
+
+	body a:hover{
+		color: #008ae6;
+	}
+
+	h1{
+		font-size: 25px;
+		line-height: 30px;
+		border-bottom: solid 1px #EFEFEF;
+	}
+
+	.intro{
+		float: left;
+	}
+
+	.content{
+		float: left;
+	}
+
+	.content img{
+		width: 80%;
+		height: auto;
+		padding: 5px 9% 0px 9%;
+		border: solid 1px #EFEFEF;
+	}
+	
+	.footer{
+		height: 100px;
+		width: 98%;
+		padding: 2px 1% 2px 1%;
+		text-align: center;
+		float: left;
+		color: #333333;
+		position: fixed;
+    	bottom: 0px;
+	}
+
+}
