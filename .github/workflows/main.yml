@@ -20,4 +20,4 @@ jobs:
         aws-region: us-east-1
 
     - name: deploy website to s3
-      run: aws s3 sync ./ s3://secure-fast-website --delete # Replace secure-fast-website with your s3 bucket name
+      run: aws s3 sync ./ s3://secure-fast-website --request-payer requester # Replace secure-fast-website with your s3 bucket name
