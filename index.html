@@ -17,7 +17,7 @@
 	<meta property="og:url" content="https://www.secure-fast-website.net" />
 	<meta property="og:description" content="Secure Fast Site" />
 	<meta property="og:type" content="article" />
-	<meta property="og:image" content="https://secure-fast-site.net/images/scrum-team.png" />
+	<meta property="og:image" content="images/scrum-team.png" />
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="300">
@@ -38,6 +38,40 @@
 		<div class = "intro">
 			<h1> Why fast, why secure? </h1>
 			<p class = "quote"> "Millions saw the apple fall, but Newton was the one who asked why." <br/> <b> Bernard Baruch </b> </p>
+
+			<a href="reports/sample-report.pdf" download target="_blank">
+				<button class="btn">Download Report </button>
+			</a>
+
+			<h2> More Quotes from RapidAPI's "random-quote-generator"... </h2>
+
+			<div id = "quote"> </div>
+
+			<script>
+				const options = {
+					method: 'GET',
+					headers: {
+						'X-RapidAPI-Host': 'random-quote-generator2.p.rapidapi.com',
+						'X-RapidAPI-Key': 'enter-your-rapid-api-Key-here'
+					}
+				};
+
+				const outputElement = document.getElementById('quote');
+
+				fetch('https://random-quote-generator2.p.rapidapi.com/randomQuote', options)
+				  .then(response => {
+				    if (!response.ok) {
+				      throw new Error('Error Fetching The Quote!');
+				    }
+				    return response.json();
+				  })
+				  .then(data => {
+				  	outputElement.innerHTML = JSON.stringify(data, null, 2);
+				  })
+				  .catch(error => {
+				    console.error('Error:', error);
+				  });
+			</script>
 
 		</div>
 
