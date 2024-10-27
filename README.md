@@ -16,5 +16,5 @@ git clone https://github.com/BensonsPage/secure-fast-website
 - git commit -m "Update my website" # To Commit your changes.
 - git push origin branch-name # push the branch to the remote repository.
 - Merge your changes to your main branch.
-- Check if GitHub Actions Run Succeffuly, if not go through this article on medium https://bensonspage.medium.com/designing-for-speed-security-agility-and-customer-satisfaction-on-aws-using-s3-cloudfront-26b5ae8df448
+- Check if GitHub Actions Run Succeffuly, if not go through [Building Fast, Secure, and Agile Static Websites and API based Web Apps on AWS](https://bensonspage.medium.com/building-fast-secure-and-agile-static-websites-and-api-based-web-apps-on-aws-bb33a88985c5).
 
